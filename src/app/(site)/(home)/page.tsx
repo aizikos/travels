@@ -1,11 +1,12 @@
 import { FC } from 'react';
+import Main from '../Main/Main';
 
 
 const page: FC = () => {
   return (
     <section>
       <div className="">
-        <h1>Hello</h1>
+        <Main/>
       </div>
     </section>
 

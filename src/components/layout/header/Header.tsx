@@ -1,9 +1,12 @@
 import React from 'react'
 import scss from './Header.module.scss'
+import Navbar from '../navbar/Navbar'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div className={scss.Header}>
+        <Navbar/>
+    </div>
   )
 }
 

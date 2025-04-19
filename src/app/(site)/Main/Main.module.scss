@@ -1,0 +1,57 @@
+.Main {
+    margin-top: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    border: 2px solid #38d39f;
+    border-radius: 9999px;
+    overflow: hidden;
+    width: 405px;
+    height: 50px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+    font-weight: 600;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.active {
+    background-color: #38d39f;
+    color: white;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 50px;
+
+    .tour_card{
+        margin-top: 20px;
+    }
+}
