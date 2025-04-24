@@ -3,6 +3,8 @@ import { FC, useState } from 'react';
 import scss from './Main.module.scss'
 import image from '../../../assets/image 3.png'
 import Image from 'next/image';
+import Link from 'next/link';
+import img_icons from '../../../assets/icons/right.svg'
 
 
 
@@ -88,6 +90,12 @@ const Main: FC = () => {
                         <p>Осталось мест: 5</p>
                     </div>
                 </div>
+            </div>
+            <div className={scss.btn_tours}>
+                <Link href={'/tours'}>
+                    Смотреть все туры 
+                    <Image src={img_icons} alt='icons'/>
+                </Link>
             </div>
         </div>
     </div>
