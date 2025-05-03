@@ -5,6 +5,7 @@ import image from '../../../assets/image 3.png'
 import Image from 'next/image';
 import Link from 'next/link';
 import img_icons from '../../../assets/icons/right.svg'
+import Guide from '../page_total/guide'
 
 
 
@@ -31,7 +32,10 @@ const Main: FC = () => {
 
             <div className={scss.card}>
                 <div className={scss.tour_card}>
-                    <Image src={image} alt='image' />
+                    <div className={scss.img_card}>
+                        <Image src={image} alt='image' />
+                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
+                    </div>
                     <div className={scss.csrd_text}>
                         <h5>Жети Огуз </h5>
                         <p>3 Дня</p>
@@ -41,7 +45,10 @@ const Main: FC = () => {
                     </div>
                 </div>
                 <div className={scss.tour_card}>
-                    <Image src={image} alt='image' />
+                    <div className={scss.img_card}>
+                        <Image src={image} alt='image' />
+                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
+                    </div>
                     <div className={scss.csrd_text}>
                         <h5>Жети Огуз </h5>
                         <p>3 Дня</p>
@@ -51,7 +58,10 @@ const Main: FC = () => {
                     </div>
                 </div>
                 <div className={scss.tour_card}>
-                    <Image src={image} alt='image' />
+                    <div className={scss.img_card}>
+                        <Image src={image} alt='image' />
+                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
+                    </div>
                     <div className={scss.csrd_text}>
                         <h5>Жети Огуз </h5>
                         <p>3 Дня</p>
@@ -61,7 +71,10 @@ const Main: FC = () => {
                     </div>
                 </div>
                 <div className={scss.tour_card}>
-                    <Image src={image} alt='image' />
+                    <div className={scss.img_card}>
+                        <Image src={image} alt='image' />
+                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
+                    </div>
                     <div className={scss.csrd_text}>
                         <h5>Жети Огуз </h5>
                         <p>3 Дня</p>
@@ -71,7 +84,10 @@ const Main: FC = () => {
                     </div>
                 </div>
                 <div className={scss.tour_card}>
-                    <Image src={image} alt='image' />
+                    <div className={scss.img_card}>
+                        <Image src={image} alt='image' />
+                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
+                    </div>
                     <div className={scss.csrd_text}>
                         <h5>Жети Огуз </h5>
                         <p>3 Дня</p>
@@ -81,7 +97,10 @@ const Main: FC = () => {
                     </div>
                 </div>
                 <div className={scss.tour_card}>
-                    <Image src={image} alt='image' />
+                    <div className={scss.img_card}>
+                        <Image src={image} alt='image' />
+                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
+                    </div>
                     <div className={scss.csrd_text}>
                         <h5>Жети Огуз </h5>
                         <p>3 Дня</p>
@@ -93,10 +112,11 @@ const Main: FC = () => {
             </div>
             <div className={scss.btn_tours}>
                 <Link href={'/tours'}>
-                    Смотреть все туры 
-                    <Image src={img_icons} alt='icons'/>
+                    Смотреть все туры
+                    <Image src={img_icons} alt='icons' />
                 </Link>
             </div>
+            <Guide/>
         </div>
     </div>
 
