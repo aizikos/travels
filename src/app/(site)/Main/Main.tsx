@@ -6,8 +6,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import img_icons from '../../../assets/icons/right.svg'
 import Guide from '../page_total/guide'
-
-
+import Review from '../page_total/review'
+import Form from '../page_total/form';
 
 const Main: FC = () => {
     const [active, setActive] = useState<'best' | 'oneDay'>('best');
@@ -29,7 +29,6 @@ const Main: FC = () => {
                     </button>
                 </div>
             </div>
-
             <div className={scss.card}>
                 <div className={scss.tour_card}>
                     <div className={scss.img_card}>
@@ -116,8 +115,10 @@ const Main: FC = () => {
                     <Image src={img_icons} alt='icons' />
                 </Link>
             </div>
-            <Guide/>
+            <Guide />
+            <Review />
         </div>
+        <Form />
     </div>
 
 
