@@ -1,7 +1,13 @@
-.Header{
-    background-image: url('../../../assets/image\ 1.png');
+.HeaderWithBackground {
+    background-image: url('../../../assets/image 1.png');
     background-size: cover;
     background-position: center;
     border-radius: 15px;
     height: 100vh;
-}
+  }
+  
+  .Header {
+    background: none;
+    height: auto;
+  }
+  
