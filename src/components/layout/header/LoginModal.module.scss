@@ -1,0 +1,47 @@
+/* components/LoginModal.module.scss */
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+
+  .btn_form{
+    display: flex;
+    flex-direction: column;
+  }
+  .modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    min-width: 300px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btns {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  

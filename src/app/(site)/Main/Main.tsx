@@ -8,6 +8,7 @@ import img_icons from '../../../assets/icons/right.svg'
 import Guide from '../page_total/guide'
 import Review from '../page_total/review'
 import Form from '../page_total/form';
+import Card from '../page_total/Card'
 
 const Main: FC = () => {
     const [active, setActive] = useState<'best' | 'oneDay'>('best');
@@ -29,86 +30,7 @@ const Main: FC = () => {
                     </button>
                 </div>
             </div>
-            <div className={scss.card}>
-                <div className={scss.tour_card}>
-                    <div className={scss.img_card}>
-                        <Image src={image} alt='image' />
-                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
-                    </div>
-                    <div className={scss.csrd_text}>
-                        <h5>Жети Огуз </h5>
-                        <p>3 Дня</p>
-                        <p>5000 сом</p>
-                        <p>Даты выездов: 18.03, 20.03</p>
-                        <p>Осталось мест: 5</p>
-                    </div>
-                </div>
-                <div className={scss.tour_card}>
-                    <div className={scss.img_card}>
-                        <Image src={image} alt='image' />
-                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
-                    </div>
-                    <div className={scss.csrd_text}>
-                        <h5>Жети Огуз </h5>
-                        <p>3 Дня</p>
-                        <p>5000 сом</p>
-                        <p>Даты выездов: 18.03, 20.03</p>
-                        <p>Осталось мест: 5</p>
-                    </div>
-                </div>
-                <div className={scss.tour_card}>
-                    <div className={scss.img_card}>
-                        <Image src={image} alt='image' />
-                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
-                    </div>
-                    <div className={scss.csrd_text}>
-                        <h5>Жети Огуз </h5>
-                        <p>3 Дня</p>
-                        <p>5000 сом</p>
-                        <p>Даты выездов: 18.03, 20.03</p>
-                        <p>Осталось мест: 5</p>
-                    </div>
-                </div>
-                <div className={scss.tour_card}>
-                    <div className={scss.img_card}>
-                        <Image src={image} alt='image' />
-                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
-                    </div>
-                    <div className={scss.csrd_text}>
-                        <h5>Жети Огуз </h5>
-                        <p>3 Дня</p>
-                        <p>5000 сом</p>
-                        <p>Даты выездов: 18.03, 20.03</p>
-                        <p>Осталось мест: 5</p>
-                    </div>
-                </div>
-                <div className={scss.tour_card}>
-                    <div className={scss.img_card}>
-                        <Image src={image} alt='image' />
-                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
-                    </div>
-                    <div className={scss.csrd_text}>
-                        <h5>Жети Огуз </h5>
-                        <p>3 Дня</p>
-                        <p>5000 сом</p>
-                        <p>Даты выездов: 18.03, 20.03</p>
-                        <p>Осталось мест: 5</p>
-                    </div>
-                </div>
-                <div className={scss.tour_card}>
-                    <div className={scss.img_card}>
-                        <Image src={image} alt='image' />
-                        <Link href={'.'} className={scss.img_btn}>Забронировать</Link>
-                    </div>
-                    <div className={scss.csrd_text}>
-                        <h5>Жети Огуз </h5>
-                        <p>3 Дня</p>
-                        <p>5000 сом</p>
-                        <p>Даты выездов: 18.03, 20.03</p>
-                        <p>Осталось мест: 5</p>
-                    </div>
-                </div>
-            </div>
+            <Card/>
             <div className={scss.btn_tours}>
                 <Link href={'/tours'}>
                     Смотреть все туры

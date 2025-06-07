@@ -14,6 +14,7 @@ const Header = () => {
     <div className={isHome ? scss.HeaderWithBackground : scss.Header}>
       <Navbar />
     </div>
+    
   )
 }
 

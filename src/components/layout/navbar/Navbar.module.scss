@@ -6,7 +6,10 @@
 .Navbar {
     background-color: rgba(248, 248, 248, 0.6);
     width: 100%;
-    padding: 30px 50px;
+    padding: 6px 50px;
+    -webkit-box-shadow: 0px 12px 14px 0px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 12px 14px 0px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 12px 14px 0px rgba(0, 0, 0, 0.17);
 }
 
 .container {
@@ -24,6 +27,7 @@
 
 .nav_menu {
     display: flex;
+    align-items: center;
     gap: 50px;
 
     li {
@@ -32,6 +36,17 @@
         font-size: 16px;
         line-height: 100%;
         letter-spacing: 0%;
+    }
+
+    .btn{
+        background: none;
+        border: none;
+        font-family: 'Monteserrat';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        cursor: pointer;
     }
 }
 
@@ -52,10 +67,16 @@
             outline: 0;
         }
 
-        img{
+        img {
             position: absolute;
             top: 6px;
             right: 10px;
         }
+    }
+}
+
+@media(max-width:480px){
+    .menu{
+        flex-direction: column;
     }
 }

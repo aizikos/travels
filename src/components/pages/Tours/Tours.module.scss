@@ -1,0 +1,45 @@
+.Tours {
+    margin-top: 100px;
+}
+
+
+.container {
+    margin: 100px 50px;
+    padding: 0 auto;
+}
+
+.toursMain{
+    display: flex;
+}
+
+.fillter {
+
+
+    .fillterTour {
+        h1 {
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            text-decoration: underline;
+        }
+
+        ul {
+            li {
+                font-family: "Montserrat";
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                padding-top: 20px;
+            }
+
+            &:hover {
+                font-family: "Montserrat";
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 100%;
+                color: red;
+            }
+        }
+    }
+}
