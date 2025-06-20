@@ -9,7 +9,7 @@ import img_icons from '../../../assets/icons/right.svg'
 const Review: FC = () => {
     return <div className={scss.Guide}>
         <div className={scss.guide}>
-            <Image src={image} alt='review' />
+            <Image className='avatarGuide' src={image} alt='review' />
             <div className={scss.guide_info}>
                 <h2>Иван</h2>
                 <div className={scss.rating}>

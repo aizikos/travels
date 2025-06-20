@@ -75,8 +75,166 @@
     }
 }
 
-@media(max-width:480px){
-    .menu{
-        flex-direction: column;
+.burgerIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+  
+    @media (min-width: 768px) {
+      display: none;
     }
-}
+  
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .slideMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .open {
+    right: 0;
+  }
+  
+  .closeIcon {
+    background: none;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+  
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .navLinks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    li {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Montserrat';
+      cursor: pointer;
+  
+      a {
+        color: #000;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+.burgerIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+  
+    @media (min-width: 768px) {
+      display: none;
+    }
+  
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .nav_menu {
+    display: none;
+  
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+  
+  /* Скрыть поиск на мобилках */
+  .input {
+    display: none;
+  
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+    }
+  }
+  
+  /* Выезжающее бургер-меню */
+  .slideMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    z-index: 999;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .slideMenu.open {
+    right: 0;
+  }
+  
+  .closeIcon {
+    background: none;
+    border: none;
+    align-self: flex-end;
+  
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      font-family: 'Montserrat';
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

@@ -9,7 +9,23 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    .avatarGuide{
+        width: 100%;
+        height: 100%;
+    }
+
+    @media(max-width: 768px){
+        flex-wrap: wrap;
+
+        .avatarGuide{
+            width: 104px;
+            height: 90px;
+        }
+    }
 }
+
+
 
 .guide_info{
     display: flex;
@@ -23,6 +39,11 @@
     align-items: center;
     justify-content: space-between;
     width: 400px;
+
+    @media(max-width: 768px){
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 .rating_scale {
